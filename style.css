@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 50px 0 0; /* zero margin means the webpage should fit complete screen*/
+  font-family: 'Roboto', sans-serif;
+  inline-height: 1.5;
+}
+
+header {
+  padding: 30px;
+}
+
+iframe {
+  max-width: 90%;
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+section {
+  padding: 35px;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.btn {
+  background-color: #AD2431;
+  box-shadow: 2px 2px 2px #561218; /*To give 3D effect to the button*/
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 25px;
+  display: inline-block; /* for button to move over the box shasdow*/
+  position: relative;
+  transition: all 0.1s ease; /* for button animation*/
+}
+
+.btn-ghost {
+  background-color: #218838;
+  box-shadow: none;
+  border: none;
+}
+
+/*when button is active hide the box shadow*/
+.btn:active {
+  box-shadow: 0 0 0 #561218;
+  transform: translate(2px, 2px);
+}
+
+.btn-ghost:active {
+  transform: none;
+}
+
+.bg-red {
+  background-color: #AD2431;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /*To align the elements to exact center*/
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Nav & Header Section */
+nav {
+  background-color: #AD2431;
+  /* To align nav bar to center of screen*/
+  display: flex;
+  justify-content: center;
+  /* *********************** */
+  padding: 15px; /*so that the nav bar looks little big with height*/
+  /*To fix the postion of the Navbar*/
+  position: fixed;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none; /*To remove the underline for the nav links*/
+  margin: 0px 15px;
+}
+
+.header-left {
+  width: 60%;
+}
+
+.header-right {
+  /*to align the div to center*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* ********************** */
+  width: 40%;
+}
+
+/* Features Section */
+.feature {
+  background-color: #AD2431;
+  color: white;
+  /*Card layout CSS*/
+  border-radius: 10px;
+  margin: 15px 1.66%;
+  padding: 10px;
+  width: 30%;
+  /* ************* */
+  text-align: center;
+}
+
+.feature i {
+  color: white;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.feature h2 {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.feature p {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+/*Footer Styling*/
+footer {
+  background-color: #561218;
+  color: white;
+/*margin-top: 20px; */
+  padding: 10px;
+  text-align: center;
+}
+
+/*form Section*/
+form {
+  margin-bottom: 40px;
+}
+
+form .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form input[type="email"] { 
+  border: 0;
+  color: black;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 25px;
+  display: inline-block; /* for button to move over the box shasdow*/
+  flex: 1;
+  margin-right: 10px;
+}
+
+form h2 {
+  color: white;
+}
+
+footer .fa-heart {
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .header-left, .header-right {
+    width: 100%;
+  }
+  
+  .header-right {
+    order: 0;
+  }
+  
+  .header-left {
+    order: 1;
+    padding-left: 20px;
+    text-align: center;
+  }
+  
+  .header-left h1 {
+    display: none;
+  }
+  
+  .feature {
+    margin: 10px;
+    width: 100%;
+  }
+  
+  .flex input {
+    margin: 5px 10px;
+    width: 100%;
+  }
+}

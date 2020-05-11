@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product Landing Page</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header id="header">
+  <nav id="nav-bar">
+    <a href="#header" class="nav-link">About</a>
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#video-wrapper" class="nav-link">Video</a>
+    <a href="#join" class="nav-link">Join</a>
+  </nav>
+  <div class="container">
+    <div class="header-left">
+      <h1>The E-Class</h1>
+      <p>The Mercedes-Benz E-Class is a range of executive cars manufactured by German automaker Mercedes-Benz in various engine and body configurations. Produced since 1953, the E-Class falls midrange in the Mercedes line-up, and has been mar keted worldwide across five generations.</p>
+      <a  class="btn" href="https://www.mercedes-benz.com/en/vehicles/passenger-cars/e-class/e-class/" target="_blank">Go to Website</a>
+    </div>
+    <div class="header-right">
+      <img id="header-img" src="https://i.postimg.cc/nLMg8RNp/MB-Eclass.jpg" alt="Mercedes-benz-eclass">
+    </div>
+  </div>
+</header>
+
+<section id="features">
+  <h2>Features</h2>
+  <div class="container">
+    <div class="feature">
+      <i class="fas fa-car-side"></i>
+      <h2>More dynamic design</h2>
+      <p>The enhanced dynamics and the upgrade of the E-Class are reflected in the model range: now the entry-level model already comes with the sporty Avantgarde Line exterior.</p>
+    </div>
+    <div class="feature">
+      <i class="fas fa-car"></i>
+      <h2>Sporty aura</h2>
+      <p>The adaptive driver’s seat adjustment is particularly convenient: when the height of the body is entered on the media display, the seat automatically moves into a usually fitting position.</p>
+    </div>
+    <div class="feature">
+      <i class="fab fa-soundcloud"></i>
+      <h2>Multimedia system</h2>
+      <p>The new E-Class is equipped with the latest generation of the MBUX multimedia system (Mercedes-Benz User Experience).</p>
+    </div>
+  </div>
+</section>
+
+<section id="video-wrapper">
+  <h2>Video</h2>
+  <div class="container">
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/HJuStxoaDf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+  </div>
+</section>
+
+<section id="join" class="bg-red">
+  <div class="container">
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <h2>Stay up-to-date with what we're doing</h2>
+      <div class="flex">
+        <input type="email" name="email" id="email" placeholder="Enter your email..." autocomplete="off"/>
+        <input id="submit" type="submit" class="btn btn-ghost" value="Submit" onclick="https://www.freecodecamp.com/email-submit" />
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  Made with <i class="fas fa-heart"></i> by Gagan Ujjini
+</footer>
+<!-- partial -->
+  
+</body>
+</html>
